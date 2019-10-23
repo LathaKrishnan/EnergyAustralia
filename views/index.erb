@@ -1,0 +1,48 @@
+<h1  class="glow">Music Festival</h1>
+<div class="container">
+
+    <% if @result == "No information" %>
+        <div class="error-message">
+            <div class="error-header">
+                <div>Oops Something went wrong!</div>
+            </div>
+            <div class="error-body">
+              
+                <img src="https://media.giphy.com/media/1wqYZrccg024VCA7eJ/giphy.gif" alt="">
+
+                <div>Please refresh the page to try again.</div>
+
+            </div>
+        </div>
+        
+    <% elsif @result == 'Too many requests, throttling' %>
+        <div class="error-message">
+            <div class="error-header">That's Too Many Requests!</div>
+            <div class="error-body">
+                <img src="https://media.giphy.com/media/1n59if8EmpiBNIvRQx/giphy.gif" alt="">
+                 <div>This page is currenly being throttled.</div>
+            </div>
+        </div>
+             
+    <% else %>
+        <% @record_labels_hash.each {|key, value| %> 
+        <div class="container-border" >
+            <div class="record-label"> <span> Record Label:</span> <%= key %> </div>
+            
+            <% value.each {|key, value| %> 
+                <div class="band-details">
+                    <div class="band"> <span class="bspan" >Band:</span> <%= key %>  </div>
+                
+                    <%  value.each do |item| %> 
+                    <div class="music-festival">  - <%= item %> </div>
+                
+                    <% end %> 
+                </div>
+            <% } %> 
+                
+        </div>
+        <% } %>
+        
+    <% end %>
+
+</div>

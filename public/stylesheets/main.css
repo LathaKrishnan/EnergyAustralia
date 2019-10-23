@@ -1,0 +1,174 @@
+body {
+    background-color: black;
+    font-family: cursive;
+  }
+  
+  .glow {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+  body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.record-label {
+    padding: 10px 0 10px;
+    background-color: rgba(132, 138, 130, 0.7);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #ff4da6;
+}
+
+span {
+    font-weight: bold;
+    color: #ff4da6;
+   }
+
+.bspan {
+    font-weight: bold;
+    color: #e00e0e;
+   }
+.band-details {
+    background-color: #eee;
+    padding-top: 10px;
+    font-size: 1.2rem;
+    color:blueviolet;
+    
+}
+
+.band-details:last-of-type {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background-color: #eee;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.band {
+    padding-left: 20px;
+}
+
+.music-festival {
+    padding-left: 40px;
+}
+
+.container {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.container-border {
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+.error-message div {
+    padding-bottom: 10px;
+}
+
+.error-header {
+    padding: 10px 0 10px;
+    background-color: rgba(132, 138, 130, 0.7);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    color: #e00e0e;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.error-body {
+    background-color: #eee;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #e00e0e;
+    font-weight: bold;
+    
+}
+
+.error-body:last-of-type {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background-color: #eee;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.error-body img {
+    width: 50%;
+    padding-left: 25%;
+}
+
+@media (max-width: 800px) {
+    .container {
+        width: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 80%;
+    }
+
+    .record-label {
+        font-size: 1.3rem;
+    }
+
+    .error-header {
+        font-size: 1.3rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 440px) {
+    .record-label {
+        font-size: 1rem;
+    }
+
+    .error-header{
+        font-size: 1rem;
+    }
+
+    .band-details {
+        font-size: 1rem;
+        
+    }
+
+    .error-body {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 300px) {
+    .container {
+        width: 90%;
+    }
+}
