@@ -4,3 +4,4 @@ gem 'sinatra'
 gem 'pry'
 gem 'httparty'
 gem 'sinatra-contrib'
+gem "rake"
